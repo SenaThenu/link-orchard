@@ -1,0 +1,17 @@
+{
+    "name": "Senash Thenuja",
+    "handle": "SenaThenu",
+    "profilePicture": "assets/profile-picture.png",
+    "description": "I create weird stuff!",
+    "linkIconFormat": "svg",
+    "links": {
+        "GitHub": "https://github.com/SenaThenu",
+        "Linkedin": "https://www.linkedin.com/in/senathenu/",
+        "Medium": "https://medium.com/@senathenu",
+        "X": "https://x.com/senathenu",
+        "Hashnode": "https://senathenu.hashnode.dev/",
+        "Reddit": "https://www.reddit.com/user/SenaThenu",
+        "Instagram": "https://www.instagram.com/senathenu/",
+        "Unsplash": "https://unsplash.com/@senathenu"
+    }
+}
