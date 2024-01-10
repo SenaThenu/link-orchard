@@ -45,7 +45,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 0.25rem;
 }
 
 #profile-picture img {
@@ -75,6 +75,7 @@
     font-size: 1.15rem;
     font-style: italic;
     font-weight: 600;
+    margin-top: -0.1rem;
 }
 
 #links-container {
