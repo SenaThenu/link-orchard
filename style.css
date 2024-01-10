@@ -38,6 +38,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#loading img {
+    width: 5rem;
+}
+
 #main-content {
     display: flex;
     flex-direction: column;
