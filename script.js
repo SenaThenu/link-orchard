@@ -78,15 +78,24 @@ function displayLinks() {
 
         // children of the anchor tag
         let linkContent = document.createElement("div");
+        linkContent.classList.add("link-content");
+
+        let linkIconDiv = document.createElement("div");
+        linkIconDiv.classList.add("link-icon");
         let linkIcon = document.createElement("img");
         linkIcon.src = `assets/${linkName}.${ICOFORMAT}`;
         linkIcon.alt = `Icon of ${linkName}`;
-        let name = document.createElement("div");
+        linkIconDiv.appendChild(linkIcon);
+
+        let nameDiv = document.createElement("div");
+        nameDiv.classList.add("link-name");
+        let name = document.createElement("p");
         name.innerHTML = linkName;
+        nameDiv.appendChild(name);
 
         // finally, adding the children
-        linkContent.appendChild(linkIcon);
-        linkContent.appendChild(name);
+        linkContent.appendChild(linkIconDiv);
+        linkContent.appendChild(nameDiv);
 
         linkAnchor.appendChild(linkContent);
         linkContainer.appendChild(linkAnchor);
