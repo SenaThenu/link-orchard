@@ -82,7 +82,7 @@ function displayLinks() {
         linkIcon.src = `assets/${linkName}.${ICOFORMAT}`;
         linkIcon.alt = `Icon of ${linkName}`;
         let name = document.createElement("div");
-        name.innerHTML = NAME;
+        name.innerHTML = linkName;
 
         // finally, adding the children
         linkContent.appendChild(linkIcon);
@@ -96,11 +96,13 @@ function displayLinks() {
 }
 
 async function main() {
-    let loading = document.getElementById("loading");
-    let mainContent = document.getElementById("main-content");
     await loadConfig();
-    loading.classList.add("hide");
-    mainContent.classList.remove("hide");
+    setTimeout(() => {
+        let loading = document.getElementById("loading");
+        let mainContent = document.getElementById("main-content");
+        loading.classList.add("hide");
+        mainContent.classList.remove("hide");
+    }, 1000);
     setUpHead();
     displayProfile();
     displayLinks();

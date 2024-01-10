@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0rem;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+}
+
+/* this is a special class used to hide and show elements */
+.hide {
+    display: none !important;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+#profile-picture {
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#profile-picture img {
+    width: 7rem;
+    height: 7rem;
+}
+
+#name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+}
+
+#name img {
+    margin-left: 0.4rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    transform: translateY(25%);
+}
+
+#handle {
+    margin-top: -0.5rem;
+    font-size: 1.1rem;
+}
+
+#description {
+    font-size: 1.15rem;
+    font-style: italic;
+}
+
+#links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+.link-container {
+    width: 75%;
+}
