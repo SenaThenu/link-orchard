@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 :root {
-    --bg-color: #000;
+    --bg-color: #011734;
     --general-font-color: #fff;
     --link-container-color: aliceblue;
     --link-font-color: #000;
@@ -111,6 +111,13 @@ body {
     background-color: var(--link-container-color);
     margin-bottom: 1rem;
     border-radius: 25px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 100ms ease-in-out;
+}
+
+.link-container:hover {
+    transform: scale(1.05);
 }
 
 .link-container a {
