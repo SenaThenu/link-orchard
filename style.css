@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
+:root {
+    --bg-color: #000;
+    --general-font-color: #fff;
+    --link-container-color: aliceblue;
+    --link-font-color: #000;
+}
+
 
 *,
 *::before,
 *::after {
-    margin: 0rem;
+    margin: 0;
+    padding: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: black;
+    color: var(--general-font-color);
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* this is a special class used to hide and show elements */
@@ -91,7 +108,7 @@
     align-items: center;
     height: 3.6rem;
     width: 75%;
-    background-color: aliceblue;
+    background-color: var(--link-container-color);
     margin-bottom: 1rem;
     border-radius: 25px;
 }
@@ -113,7 +130,9 @@
 }
 
 .link-name p {
+    color: var(--link-font-color);
     font-size: 1.4rem;
+    font-weight: 600;
     text-align: center;
     margin-left: -2.8rem;
 }

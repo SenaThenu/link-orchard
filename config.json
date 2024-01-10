@@ -3,6 +3,7 @@
     "handle": "SenaThenu",
     "profilePicture": "assets/profile-picture.png",
     "description": "I create weird stuff!",
+    "backgroundImage": "assets/background.png",
     "linkIconFormat": "svg",
     "links": {
         "GitHub": "https://github.com/SenaThenu",

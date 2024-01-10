@@ -2,6 +2,7 @@ let NAME;
 let HANDLE;
 let DESCRIPTION;
 let PROFILEPICPATH; // path to the profile picture
+let BGPATH; // path to the background image
 let LINKS;
 let ICOFORMAT; // the format of the link icons
 
@@ -15,6 +16,7 @@ async function loadConfig() {
         DESCRIPTION = config["description"];
         LINKS = config["links"];
         ICOFORMAT = config["linkIconFormat"];
+        BGPATH = config["backgroundImage"];
     } catch (err) {
         console.error(`An error occurred when loading config.json: ${err}`);
     }
@@ -110,11 +112,17 @@ function addCopyright() {
     copyright.innerHTML = `©️ ${NAME} ${currentYear}`;
 }
 
+function injectBackground() {
+    let masterElement = document.getElementById("master");
+    masterElement.style.backgroundImage = `url(${BGPATH})`;
+}
+
 async function main() {
     await loadConfig();
     setTimeout(() => {
         let loading = document.getElementById("loading");
         let mainContent = document.getElementById("main-content");
+        injectBackground();
         loading.classList.add("hide");
         mainContent.classList.remove("hide");
     }, 1000);
