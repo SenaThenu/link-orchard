@@ -2,6 +2,7 @@ let NAME;
 let HANDLE;
 let DESCRIPTION;
 let PROFILEPICPATH; // path to the profile picture
+let BGPATH; // path to the background image
 let LINKS;
 let ICOFORMAT; // the format of the link icons
 
@@ -15,6 +16,7 @@ async function loadConfig() {
         DESCRIPTION = config["description"];
         LINKS = config["links"];
         ICOFORMAT = config["linkIconFormat"];
+        BGPATH = config["backgroundImage"];
     } catch (err) {
         console.error(`An error occurred when loading config.json: ${err}`);
     }
@@ -78,15 +80,24 @@ function displayLinks() {
 
         // children of the anchor tag
         let linkContent = document.createElement("div");
+        linkContent.classList.add("link-content");
+
+        let linkIconDiv = document.createElement("div");
+        linkIconDiv.classList.add("link-icon");
         let linkIcon = document.createElement("img");
         linkIcon.src = `assets/${linkName}.${ICOFORMAT}`;
         linkIcon.alt = `Icon of ${linkName}`;
-        let name = document.createElement("div");
+        linkIconDiv.appendChild(linkIcon);
+
+        let nameDiv = document.createElement("div");
+        nameDiv.classList.add("link-name");
+        let name = document.createElement("p");
         name.innerHTML = linkName;
+        nameDiv.appendChild(name);
 
         // finally, adding the children
-        linkContent.appendChild(linkIcon);
-        linkContent.appendChild(name);
+        linkContent.appendChild(linkIconDiv);
+        linkContent.appendChild(nameDiv);
 
         linkAnchor.appendChild(linkContent);
         linkContainer.appendChild(linkAnchor);
@@ -95,17 +106,30 @@ function displayLinks() {
     }
 }
 
+function addCopyright() {
+    let copyright = document.getElementById("copyright-info");
+    const currentYear = new Date().getFullYear();
+    copyright.innerHTML = `©️ ${NAME} ${currentYear}`;
+}
+
+function injectBackground() {
+    let masterElement = document.getElementById("master");
+    masterElement.style.backgroundImage = `url(${BGPATH})`;
+}
+
 async function main() {
     await loadConfig();
     setTimeout(() => {
         let loading = document.getElementById("loading");
         let mainContent = document.getElementById("main-content");
+        injectBackground();
         loading.classList.add("hide");
         mainContent.classList.remove("hide");
     }, 1000);
     setUpHead();
     displayProfile();
     displayLinks();
+    addCopyright();
 }
 
 main();

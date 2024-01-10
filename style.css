@@ -1,12 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+:root {
+    --bg-color: #011734;
+    --general-font-color: #fff;
+    --link-container-color: aliceblue;
+    --link-font-color: #000;
+}
 
 
 *,
 *::before,
 *::after {
-    margin: 0rem;
+    margin: 0;
+    padding: 0;
     font-family: 'Titillium Web', sans-serif;
-    color: black;
+    color: var(--general-font-color);
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* this is a special class used to hide and show elements */
@@ -14,14 +31,25 @@
     display: none !important;
 }
 
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading img {
+    width: 5rem;
+}
+
 #main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 50rem;
+    max-width: 45rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 #profile {
@@ -29,7 +57,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 #profile-picture {
@@ -38,7 +66,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 0.25rem;
 }
 
 #profile-picture img {
@@ -67,6 +95,8 @@
 #description {
     font-size: 1.15rem;
     font-style: italic;
+    font-weight: 600;
+    margin-top: -0.1rem;
 }
 
 #links-container {
@@ -74,9 +104,65 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 50vw;
+    width: 100%;
 }
 
 .link-container {
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
     width: 75%;
+    background-color: var(--link-container-color);
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 100ms ease-in-out;
+}
+
+.link-container:hover {
+    transform: scale(1.05);
+}
+
+.link-container a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.link-content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.link-name {
+    width: 100%;
+}
+
+.link-name p {
+    color: var(--link-font-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: -2.8rem;
+}
+
+.link-icon {
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-icon img {
+    width: 2.4rem;
+}
+
+.copyright {
+    margin: 1.5rem 0rem;
+}
+
+#copyright-info {
+    font-size: 1.12rem;
 }
