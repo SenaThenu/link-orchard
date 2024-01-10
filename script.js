@@ -104,6 +104,12 @@ function displayLinks() {
     }
 }
 
+function addCopyright() {
+    let copyright = document.getElementById("copyright-info");
+    const currentYear = new Date().getFullYear();
+    copyright.innerHTML = `©️ ${NAME} ${currentYear}`;
+}
+
 async function main() {
     await loadConfig();
     setTimeout(() => {
@@ -115,6 +121,7 @@ async function main() {
     setUpHead();
     displayProfile();
     displayLinks();
+    addCopyright();
 }
 
 main();
