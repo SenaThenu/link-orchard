@@ -40,7 +40,7 @@ body {
 
 @keyframes stack-links {
     from {
-        opacity: 0;
+        opacity: 0 !important;
         transform: translateX(-50%);
         filter: blur(5px);
     }
@@ -111,6 +111,11 @@ body {
     margin-top: -0.1rem;
 }
 
+/* Links are hidden at first */
+.hide {
+    opacity: 0 !important;
+}
+
 #links-container {
     display: flex;
     flex-direction: column;
@@ -119,8 +124,9 @@ body {
     width: 100%;
 }
 
+
 .link-container {
-    animation: stack-links 1s ease-in-out calc(50ms * var(--order));
+    animation: stack-links 900ms ease-in-out calc(50ms * var(--order));
     display: flex;
     align-items: center;
     height: 3.6rem;
