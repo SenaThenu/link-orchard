@@ -106,6 +106,7 @@ body {
 
 #description {
     font-size: 1.15rem;
+    max-width: 28rem;
     font-style: italic;
     font-weight: 600;
     margin-top: -0.1rem;
