@@ -120,7 +120,7 @@ body {
 }
 
 .link-container {
-    animation: stack-links 1s ease-in-out calc(100ms * var(--order));
+    animation: stack-links 1s ease-in-out calc(60ms * var(--order));
     display: flex;
     align-items: center;
     height: 3.6rem;
