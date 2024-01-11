@@ -107,6 +107,9 @@ function displayLinks() {
 
         linksContainer.appendChild(linkContainer);
     }
+    setTimeout(() => {
+        linksContainer.classList.remove("hide");
+    }, 450);
 }
 
 function addCopyright() {
@@ -127,6 +130,18 @@ async function main() {
     displayProfile();
     displayLinks();
     addCopyright();
+    // setTimeout(() => {
+    //     let linksContainer = document.getElementById("links-container");
+
+    //     let links = document.querySelectorAll(".link-container");
+    //     links.forEach((link) => {
+    //         link.classList.add("link-animate");
+    //         link.classList.remove("hide");
+    //     });
+    //     setTimeout(() => {
+    //         linksContainer.classList.remove("hide");
+    //     }, 100);
+    // }, 1000);
 }
 
 main();
