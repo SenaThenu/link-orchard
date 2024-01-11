@@ -26,20 +26,31 @@ body {
     background-attachment: fixed;
 }
 
-/* this is a special class used to hide and show elements */
-.hide {
-    display: none !important;
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-#loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+@keyframes stack-links {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+        filter: blur(5px);
+    }
 
-#loading img {
-    width: 5rem;
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+
 }
 
 #main-content {
@@ -49,7 +60,8 @@ body {
     max-width: 45rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+    animation: fade-in 1s ease-in-out;
 }
 
 #profile {
@@ -108,6 +120,7 @@ body {
 }
 
 .link-container {
+    animation: stack-links 1s ease-in-out calc(100ms * var(--order));
     display: flex;
     align-items: center;
     height: 3.6rem;

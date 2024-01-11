@@ -68,10 +68,13 @@ function displayProfile() {
 
 function displayLinks() {
     const linksContainer = document.getElementById("links-container");
+    let counter = 0;
     for (const [linkName, link] of Object.entries(LINKS)) {
+        counter += 1;
         // the main container of the link
         let linkContainer = document.createElement("div");
         linkContainer.classList.add("link-container");
+        linkContainer.style = `--order: ${counter}`;
 
         // the anchor tag
         let linkAnchor = document.createElement("a");
@@ -109,7 +112,7 @@ function displayLinks() {
 function addCopyright() {
     let copyright = document.getElementById("copyright-info");
     const currentYear = new Date().getFullYear();
-    copyright.innerHTML = `©️ ${NAME} ${currentYear}`;
+    copyright.innerHTML = `&#169; ${NAME} ${currentYear}`;
 }
 
 function injectBackground() {
@@ -119,13 +122,7 @@ function injectBackground() {
 
 async function main() {
     await loadConfig();
-    setTimeout(() => {
-        let loading = document.getElementById("loading");
-        let mainContent = document.getElementById("main-content");
-        injectBackground();
-        loading.classList.add("hide");
-        mainContent.classList.remove("hide");
-    }, 1000);
+    injectBackground();
     setUpHead();
     displayProfile();
     displayLinks();
