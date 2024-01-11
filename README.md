@@ -4,7 +4,7 @@
 <div align="center">
   <!-- PROJECT LOGO -->
   <a href="https://github.com/SenaThenu/link-orchard">
-    <img src="https://github.com/SenaThenu/link-orchard/blob/main/readme-assets/logo.svg" alt="Logo" height="250">
+    <img src="https://github.com/SenaThenu/link-orchard/blob/main/readme-assets/logo.svg" alt="Logo" height="150">
   </a>
 
   <!-- PROJECT TITLE -->
@@ -55,8 +55,8 @@ There's a live preview on this [website](senathenu.github.io/link-orchard)!
 
 ## Features 🌟
 
-- Ability to add any link with a custom link icon
-- Can be set-up within 5 minutes!
+- Supporting Any Link + Custom Link Icon
+- Easy & Quick Set Up
 - Responsive Layout
 - Sleek Animation
 - Professional Design
