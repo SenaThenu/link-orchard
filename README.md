@@ -4,7 +4,7 @@
 <div align="center">
   <!-- PROJECT LOGO -->
   <a href="https://github.com/SenaThenu/link-orchard">
-    <img src="https://github.com/SenaThenu/link-orchard/blob/main/readme-assets/logo.svg" alt="Logo" height="150">
+    <img src="https://github.com/SenaThenu/link-orchard/blob/main/readme-assets/logo-new.svg" alt="Logo" height="150">
   </a>
 
   <!-- PROJECT TITLE -->
