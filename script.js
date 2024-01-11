@@ -119,13 +119,7 @@ function injectBackground() {
 
 async function main() {
     await loadConfig();
-    setTimeout(() => {
-        let loading = document.getElementById("loading");
-        let mainContent = document.getElementById("main-content");
-        injectBackground();
-        loading.classList.add("hide");
-        mainContent.classList.remove("hide");
-    }, 1000);
+    injectBackground();
     setUpHead();
     displayProfile();
     displayLinks();
