@@ -130,7 +130,8 @@ body {
     display: flex;
     align-items: center;
     height: 3.6rem;
-    width: 75%;
+    width: 90%;
+    max-width: 35rem;
     background-color: var(--link-container-color);
     margin-bottom: 1rem;
     border-radius: 25px;
