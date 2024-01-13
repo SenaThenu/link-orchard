@@ -49,7 +49,7 @@
 
 ## Project Preview 📖
 
-There's a live preview on this [website](senathenu.github.io/link-orchard)!
+There's a live preview on this [website](https://senathenu.github.io/link-orchard/)!
 
 <p align="right"><a href="#readme-top">Jump to Top<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand gestures/Index Pointing Up.png" alt="Pointing Up" width="25" height="25" /></a></p>
 
