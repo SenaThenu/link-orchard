@@ -109,7 +109,7 @@ function displayLinks() {
     }
     setTimeout(() => {
         linksContainer.classList.remove("hide");
-    }, 450);
+    }, 500);
 }
 
 function addCopyright() {
@@ -124,6 +124,10 @@ function injectBackground() {
 }
 
 async function main() {
+    document.addEventListener("DOMContentLoaded", () => {
+        let content = document.getElementById("master");
+        content.classList.remove("disappear");
+    });
     await loadConfig();
     injectBackground();
     setUpHead();
