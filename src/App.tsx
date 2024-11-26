@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 // types
 import ConfigDataType from "./types/ConfigDataType";
@@ -10,7 +10,7 @@ import configData from "./data/config.json";
 import LinkBlocksWrapper from "./components/LinkBlocksWrapper";
 
 // styles
-import "./App.scss";
+import "./styles/global.scss";
 
 const config: ConfigDataType = configData;
 

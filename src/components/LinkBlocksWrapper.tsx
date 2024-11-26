@@ -11,6 +11,7 @@ interface LinkBlocksWrapperProps {
     links: LinkDataType[];
     linkLogoColor: string;
 }
+
 export default function LinkBlocksWrapper({
     links,
     linkLogoColor,

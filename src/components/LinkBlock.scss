@@ -1,8 +1,9 @@
+@use "../styles/mixins";
+
 .link-block {
   color: black;
   text-decoration: none;
   width: 100%;
-  max-width: 560px;
 }
 
 .link-content {
@@ -13,10 +14,7 @@
 
   padding: 10px;
 
-  background: rgba(255, 255, 255, 0.65);
-  border-radius: 25px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  @include mixins.glass-card;
 
   .link-name {
     width: 100%;

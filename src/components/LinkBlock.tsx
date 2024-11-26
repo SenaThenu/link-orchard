@@ -14,10 +14,11 @@ interface LinkBlockProps {
 }
 
 const linkBlockVariants = {
-    initial: { scale: 1 },
+    initial: { opacity: 0, scale: 1 },
+    visible: { opacity: 1, scale: 1 },
     hover: { scale: 1.05 },
     focus: { scale: 1.05 },
-    tap: { scale: 0.9 },
+    tap: { scale: 0.95 },
 };
 
 export default function LinkBlock(props: LinkBlockProps) {
@@ -27,6 +28,7 @@ export default function LinkBlock(props: LinkBlockProps) {
                 className="link-content"
                 variants={linkBlockVariants}
                 initial="initial"
+                animate="visible"
                 whileHover="hover"
                 whileFocus="focus"
                 whileTap="tap"
