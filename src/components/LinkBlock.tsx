@@ -14,7 +14,7 @@ interface LinkBlockProps {
 }
 
 const linkBlockVariants = {
-    initial: { opacity: 0, scale: 1 },
+    initial: { opacity: 1, scale: 1.1 },
     visible: { opacity: 1, scale: 1 },
     hover: { scale: 1.05 },
     focus: { scale: 1.05 },
