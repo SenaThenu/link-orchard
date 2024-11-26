@@ -1,0 +1,25 @@
+.link-block {
+  width: 100%;
+}
+
+.link-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .link-name {
+    width: 100%;
+    margin-left: -36px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .icon {
+    width: fit-content;
+  }
+}
