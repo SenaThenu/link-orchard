@@ -9,6 +9,7 @@ interface ConfigDataType {
     verifiedIconColor: string;
     linkLogoColor: string;
     textColor: string;
+    buildYourOwnBtnColor: string;
     links: LinkDataType[];
 }
 

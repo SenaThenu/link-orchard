@@ -49,7 +49,7 @@ function App() {
                 />
                 <Footer
                     name={config.name}
-                    buildYourOwnBtnColor={config.linkLogoColor}
+                    buildYourOwnBtnColor={config.buildYourOwnBtnColor}
                 />
             </div>
         </>
