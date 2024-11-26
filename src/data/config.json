@@ -1,0 +1,72 @@
+{
+    "name": "Senash Thenuja",
+    "handle": "SenaThenu",
+    "profilePicturePath": "assets/profile-picture.webp",
+    "description": "I create weird stuff!",
+    "backgroundImage": "assets/background.webp",
+    "verifiedIconPath": "assets/verified.svg",
+    "verifiedIconColor": "#444",
+    "linkLogoColor": "#444",
+    "links": [
+        {
+            "name": "GitHub",
+            "logoPath": "assets/logo/github.svg",
+            "url": "https://github.com/SenaThenu"
+        },
+        {
+            "name": "Linkedin",
+            "logoPath": "assets/logo/linkedin.svg",
+            "url": "https://www.linkedin.com/in/senathenu/"
+        },
+        {
+            "name": "X",
+            "logoPath": "assets/logo/social_x.svg",
+            "url": "https://x.com/senathenu"
+        },
+        {
+            "name": "Medium",
+            "logoPath": "assets/logo/medium.svg",
+            "url": "https://medium.com/@senathenu"
+        },
+        {
+            "name": "Kaggle",
+            "logoPath": "assets/logo/kaggle.svg",
+            "url": "https://www.kaggle.com/senashthenuja"
+        },
+        {
+            "name": "Hashnode",
+            "logoPath": "assets/logo/linkedin.svg",
+            "url": "https://senathenu.hashnode.dev/"
+        },
+        {
+            "name": "Product Hunt",
+            "logoPath": "assets/logo/product-hunt.svg",
+            "url": "https://www.producthunt.com/@senathenu"
+        },
+        {
+            "name": "Instagram",
+            "logoPath": "assets/logo/instagram.svg",
+            "url": "https://www.instagram.com/senathenu/"
+        },
+        {
+            "name": "Reddit",
+            "logoPath": "assets/logo/reddit.svg",
+            "url": "https://www.reddit.com/user/SenaThenu"
+        },
+        {
+            "name": "Bluesky",
+            "logoPath": "assets/logo/bluesky.svg",
+            "url": "https://bsky.app/profile/senathenu.bsky.social"
+        },
+        {
+            "name": "Unsplash",
+            "logoPath": "assets/logo/unsplash.svg",
+            "url": "https://unsplash.com/@senathenu"
+        },
+        {
+            "name": "Goodreads",
+            "logoPath": "assets/logo/goodreads.svg",
+            "url": "https://www.goodreads.com/user/show/136197280-senash"
+        }
+    ]
+}
