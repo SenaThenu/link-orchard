@@ -24,6 +24,16 @@
             "url": "https://x.com/senathenu"
         },
         {
+            "name": "Sponsor",
+            "logoName": "heart",
+            "url": "https://github.com/sponsors/SenaThenu"
+        },
+        {
+            "name": "Buy Me a Coffee",
+            "logoName": "buy-me-a-coffee",
+            "url": "https://buymeacoffee.com/senathenu"
+        },
+        {
             "name": "Medium",
             "logoName": "medium",
             "url": "https://medium.com/@senathenu"
@@ -35,7 +45,7 @@
         },
         {
             "name": "Hashnode",
-            "logoName": "linkedin",
+            "logoName": "hashnode",
             "url": "https://senathenu.hashnode.dev/"
         },
         {
@@ -52,11 +62,6 @@
             "name": "Reddit",
             "logoName": "reddit",
             "url": "https://www.reddit.com/user/SenaThenu"
-        },
-        {
-            "name": "Bluesky",
-            "logoName": "bluesky-social",
-            "url": "https://bsky.app/profile/senathenu.bsky.social"
         },
         {
             "name": "Unsplash",
