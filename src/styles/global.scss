@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -22,6 +23,12 @@ body {
 .content {
   width: 100%;
   max-width: 560px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  row-gap: 15px;
 }
 
 @media only screen and (max-width: 500px) {

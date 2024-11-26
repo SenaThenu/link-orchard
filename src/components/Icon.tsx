@@ -11,7 +11,7 @@ interface IconProps {
 export default function Icon({ name, fillColor, size = 24 }: IconProps) {
     const IconFace = useMemo(() => {
         return lazy(() =>
-            import(`../assets/logos/${name}.svg?react`).catch((err) => {
+            import(`../assets/icons/${name}.svg?react`).catch((err) => {
                 console.error("Icon couldn't be loaded!", err);
                 return { default: () => null }; // default refers to the imported component
             })

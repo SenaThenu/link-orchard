@@ -2,10 +2,9 @@
     "name": "Senash Thenuja",
     "handle": "SenaThenu",
     "profilePicturePath": "assets/profile-picture.webp",
-    "description": "I create weird stuff!",
+    "bio": "I create weird stuff!",
     "backgroundImage": "assets/background.webp",
-    "verifiedIconPath": "assets/verified.svg",
-    "verifiedIconColor": "#444",
+    "verifiedIconColor": "#145198",
     "linkLogoColor": "#145198",
     "links": [
         {

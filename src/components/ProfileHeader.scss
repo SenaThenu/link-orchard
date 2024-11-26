@@ -1,0 +1,58 @@
+@use "../styles/mixins";
+
+.profile-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  padding: 15px 10px;
+
+  @include mixins.glass-card;
+}
+
+.profile-picture {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 128px;
+    border-radius: 50%;
+  }
+}
+
+.profile-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+
+  .profile-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+}
+
+.profile-handle {
+  margin-top: -8px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-bio {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.profile-title,
+.profile-handle,
+.profile-bio {
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}

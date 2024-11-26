@@ -7,6 +7,7 @@ import ConfigDataType from "./types/ConfigDataType";
 import configData from "./data/config.json";
 
 // components
+import ProfileHeader from "./components/ProfileHeader";
 import LinkBlocksWrapper from "./components/LinkBlocksWrapper";
 
 // styles
@@ -22,6 +23,14 @@ function App() {
 
     return (
         <div className="content">
+            <ProfileHeader
+                bio={config.bio}
+                handle={config.handle}
+                name={config.name}
+                profilePicturePath={config.profilePicturePath}
+                verifiedIconColor={config.verifiedIconColor}
+                verifiedIconPath={config.verifiedIconColor}
+            />
             <LinkBlocksWrapper
                 links={config.links}
                 linkLogoColor={config.linkLogoColor}

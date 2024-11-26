@@ -4,9 +4,8 @@ interface ConfigDataType {
     name: string;
     handle: string;
     profilePicturePath: string;
-    description: string;
+    bio: string;
     backgroundImage: string;
-    verifiedIconPath: string;
     verifiedIconColor: string;
     linkLogoColor: string;
     links: LinkDataType[];
