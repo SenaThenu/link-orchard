@@ -1,0 +1,27 @@
+@use "../styles/mixins";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 15px 10px;
+
+  @include mixins.glass-card;
+
+  .copyright {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .build-your-own-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+  }
+}

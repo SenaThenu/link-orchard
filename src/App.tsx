@@ -9,6 +9,7 @@ import configData from "./data/config.json";
 // components
 import ProfileHeader from "./components/ProfileHeader";
 import LinkBlocksWrapper from "./components/LinkBlocksWrapper";
+import Footer from "./components/Footer";
 
 // styles
 import "./styles/global.scss";
@@ -34,6 +35,10 @@ function App() {
             <LinkBlocksWrapper
                 links={config.links}
                 linkLogoColor={config.linkLogoColor}
+            />
+            <Footer
+                name={config.name}
+                buildYourOwnBtnColor={config.linkLogoColor}
             />
         </div>
     );
