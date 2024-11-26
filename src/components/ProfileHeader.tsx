@@ -4,10 +4,12 @@ import Icon from "./Icon";
 // styles
 import "./ProfileHeader.scss";
 
+// assets
+import profilePicture from "../assets/profile-picture.webp";
+
 interface ProfileHeaderProps {
     name: string;
     handle: string;
-    profilePicturePath: string;
     bio: string;
     verifiedIconPath: string;
     verifiedIconColor: string;
@@ -18,7 +20,7 @@ export default function ProfileHeader(props: ProfileHeaderProps) {
         <div className="profile-header">
             <div className="profile-picture">
                 <img
-                    src={`/src/${props.profilePicturePath}`}
+                    src={profilePicture}
                     alt={`Profile picture of ${props.name}`}
                     draggable={false}
                 />

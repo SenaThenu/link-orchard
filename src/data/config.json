@@ -1,13 +1,12 @@
 {
     "name": "Senash Thenuja",
     "handle": "SenaThenu",
-    "profilePicturePath": "assets/profile-picture.webp",
     "bio": "I create weird stuff!",
-    "backgroundImage": "assets/background.webp",
     "verifiedIconColor": "#36b7fd",
     "linkLogoColor": "#30A5E4",
     "textColor": "#e0f4ff",
     "buildYourOwnBtnColor": "#053a6e",
+    "backgroundColor": "#041020",
     "links": [
         {
             "name": "GitHub",

@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 
+// assets
+import favicon from "../assets/favicon.svg";
+
 interface LoadingScreenProps {
     isLoaded: boolean;
 }
@@ -18,12 +21,7 @@ export default function LoadingScreen({ isLoaded }: LoadingScreenProps) {
                         repeat: Infinity, // repeat the animation infinitely
                         repeatType: "loop", // ensures the animation loops back to the start
                     }}>
-                    <img
-                        src="src/assets/favicon.svg"
-                        alt="Loading"
-                        height={64}
-                        width={64}
-                    />
+                    <img src={favicon} alt="Loading" height={64} width={64} />
                 </motion.div>
             </div>
         )

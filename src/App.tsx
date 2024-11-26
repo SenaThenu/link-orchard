@@ -22,7 +22,7 @@ function App() {
 
     useEffect(() => {
         document.title = `${config.handle}'s Link Orchard`;
-        document.body.style.backgroundImage = `url("src/${config.backgroundImage}")`;
+        document.body.style.backgroundColor = config.backgroundColor;
         document.body.style.color = config.textColor;
 
         const timer = setTimeout(() => setIsLoaded(true), 1000);
@@ -39,7 +39,6 @@ function App() {
                     bio={config.bio}
                     handle={config.handle}
                     name={config.name}
-                    profilePicturePath={config.profilePicturePath}
                     verifiedIconColor={config.verifiedIconColor}
                     verifiedIconPath={config.verifiedIconColor}
                 />

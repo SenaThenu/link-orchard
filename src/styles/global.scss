@@ -9,7 +9,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #041020;
+  background-image: url("../assets/background.webp");
 }
 
 #root {
@@ -32,6 +32,7 @@ body {
   align-items: stretch;
   justify-content: center;
   row-gap: 15px;
+  animation: fade-in 1s ease;
 }
 
 .loading-screen {
@@ -54,15 +55,5 @@ body {
 
   to {
     opacity: 1;
-  }
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
   }
 }
