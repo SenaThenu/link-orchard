@@ -3,20 +3,20 @@ import { lazy, Suspense, useMemo } from "react";
 
 // styles
 interface IconProps {
-    path: string;
+    name: string;
     fillColor: string;
     size?: number;
 }
 
-export default function Icon({ path, fillColor, size = 24 }: IconProps) {
+export default function Icon({ name, fillColor, size = 24 }: IconProps) {
     const IconFace = useMemo(() => {
         return lazy(() =>
-            import(`../../../${path}?react`).catch((err) => {
+            import(`../assets/logos/${name}.svg?react`).catch((err) => {
                 console.error("Icon couldn't be loaded!", err);
                 return { default: () => null }; // default refers to the imported component
             })
         );
-    }, [path]);
+    }, [name]);
 
     return (
         <Suspense fallback={<div style={{ width: size, height: size }}></div>}>

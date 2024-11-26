@@ -1,5 +1,6 @@
 .link-block {
-  width: 100%;
+  color: white;
+  text-decoration: none;
 }
 
 .link-content {
@@ -7,6 +8,13 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+
+  padding: 10px;
+
+  max-width: 560px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
 
   .link-name {
     width: 100%;

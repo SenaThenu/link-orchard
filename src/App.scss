@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content {
+  height: 100vh;
+  // backdrop-filter: blur(2px);
+}

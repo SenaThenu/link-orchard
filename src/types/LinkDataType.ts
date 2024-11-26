@@ -1,6 +1,6 @@
 interface LinkDataType {
     name: string;
-    logoPath: string;
+    logoName: string;
     url: string;
 }
 
