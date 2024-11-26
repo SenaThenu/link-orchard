@@ -6,7 +6,7 @@
     "backgroundImage": "assets/background.webp",
     "verifiedIconPath": "assets/verified.svg",
     "verifiedIconColor": "#444",
-    "linkLogoColor": "#0284ca",
+    "linkLogoColor": "#15549e",
     "links": [
         {
             "name": "GitHub",
@@ -20,7 +20,7 @@
         },
         {
             "name": "X",
-            "logoName": "social_x",
+            "logoName": "social-x",
             "url": "https://x.com/senathenu"
         },
         {
@@ -45,7 +45,7 @@
         },
         {
             "name": "Instagram",
-            "logoName": "instagram",
+            "logoName": "ins",
             "url": "https://www.instagram.com/senathenu/"
         },
         {
@@ -55,7 +55,7 @@
         },
         {
             "name": "Bluesky",
-            "logoName": "bluesky",
+            "logoName": "bluesky-social",
             "url": "https://bsky.app/profile/senathenu.bsky.social"
         },
         {

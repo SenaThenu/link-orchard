@@ -7,7 +7,7 @@ import ConfigDataType from "./types/ConfigDataType";
 import configData from "./data/config.json";
 
 // components
-import LinkBlock from "./components/LinkBlock";
+import LinkBlocksWrapper from "./components/LinkBlocksWrapper";
 
 // styles
 import "./App.scss";
@@ -22,11 +22,9 @@ function App() {
 
     return (
         <div className="content">
-            <LinkBlock
-                linkName={config.links[0].name}
-                logoColor={config.linkLogoColor}
-                logoName={config.links[0].logoName}
-                url={config.links[0].url}
+            <LinkBlocksWrapper
+                links={config.links}
+                linkLogoColor={config.linkLogoColor}
             />
         </div>
     );

@@ -1,6 +1,8 @@
 .link-block {
-  color: white;
+  color: black;
   text-decoration: none;
+  width: 100%;
+  max-width: 560px;
 }
 
 .link-content {
@@ -11,16 +13,16 @@
 
   padding: 10px;
 
-  max-width: 560px;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 25px;
   backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
   .link-name {
     width: 100%;
-    margin-left: -36px;
+    margin-left: -42px;
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     word-wrap: break-word;
     overflow-wrap: break-word;

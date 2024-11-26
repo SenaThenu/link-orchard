@@ -18,7 +18,7 @@ export default function LinkBlock(props: LinkBlockProps) {
                 <Icon
                     fillColor={props.logoColor}
                     name={props.logoName}
-                    size={36}
+                    size={42}
                 />
                 <div className="link-name">{props.linkName}</div>
             </div>
