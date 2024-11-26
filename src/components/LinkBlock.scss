@@ -1,0 +1,32 @@
+@use "../styles/mixins";
+
+.link-block {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  @include mixins.glass-card;
+
+  .link-name {
+    width: 100%;
+    margin-left: -42px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .icon {
+    width: fit-content;
+  }
+}

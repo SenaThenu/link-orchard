@@ -1,0 +1,5 @@
+@mixin glass-card() {
+  background: rgba(4, 16, 32, 0.7);
+  border-radius: 25px;
+  backdrop-filter: blur(5px);
+}
