@@ -6,7 +6,7 @@
     "backgroundImage": "assets/background.webp",
     "verifiedIconPath": "assets/verified.svg",
     "verifiedIconColor": "#444",
-    "linkLogoColor": "#15549e",
+    "linkLogoColor": "#145198",
     "links": [
         {
             "name": "GitHub",
