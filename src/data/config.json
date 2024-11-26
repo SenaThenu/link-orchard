@@ -4,8 +4,9 @@
     "profilePicturePath": "assets/profile-picture.webp",
     "bio": "I create weird stuff!",
     "backgroundImage": "assets/background.webp",
-    "verifiedIconColor": "#145198",
-    "linkLogoColor": "#145198",
+    "verifiedIconColor": "#36b7fd",
+    "linkLogoColor": "#30A5E4",
+    "textColor": "#e0f4ff",
     "links": [
         {
             "name": "GitHub",

@@ -11,8 +11,9 @@
   @include mixins.glass-card;
 
   .copyright {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: inherit;
   }
 
   .build-your-own-btn {
@@ -20,7 +21,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 5px;
-    color: white;
+    color: inherit;
     padding: 10px;
     border-radius: 25px;
     font-size: 1.1rem;

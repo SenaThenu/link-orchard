@@ -8,6 +8,7 @@ interface ConfigDataType {
     backgroundImage: string;
     verifiedIconColor: string;
     linkLogoColor: string;
+    textColor: string;
     links: LinkDataType[];
 }
 

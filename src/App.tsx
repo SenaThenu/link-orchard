@@ -20,6 +20,7 @@ function App() {
     useEffect(() => {
         document.title = `${config.handle}'s Link Orchard`;
         document.body.style.backgroundImage = `url("src/${config.backgroundImage}")`;
+        document.body.style.color = config.textColor;
     }, []);
 
     return (

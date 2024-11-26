@@ -43,7 +43,7 @@ export default function Footer(props: FooterProps) {
                 <a
                     href="https://github.com/SenaThenu/link-orchard"
                     target="_blank"
-                    style={{ textDecoration: "none" }}>
+                    style={{ textDecoration: "none", color: "inherit" }}>
                     <div
                         className="build-your-own-btn"
                         style={{ backgroundColor: props.buildYourOwnBtnColor }}>
