@@ -12,7 +12,7 @@
 
   <!-- Project Description -->
   <p align="center">
-    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png" alt="Sparkles" width="25" height="25" /> A no-code open-source alternative to Linktree <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png" alt="Sparkles" width="25" height="25" />
+    <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png" alt="Sparkles" width="25" height="25" /> Modern Link In Bio <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png" alt="Sparkles" width="25" height="25" />
     <br>
     <a href="https://github.com/SenaThenu/link-orchard/issues">Report a Bug <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Bug.png" alt="Bug" width="20" height="20" /> or Request a New Feature<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel and places/Star.png" alt="Star" width="20" height="20" /></a>
   </p>
@@ -55,19 +55,19 @@ There's a live preview on this [website](https://senathenu.github.io/link-orchar
 
 ## Features 🌟
 
-- Supporting Any Link + Custom Link Icon
+- Supports Any Link + Custom Link Icons
 - Easy & Quick Set Up
 - Responsive Layout
 - Sleek Animation
 - Professional Design
 - Verified Checkmark
-- Dynamically Updating Copyright Information (Using your name!)
+- Dynamically Updates Copyright Information (Using your name!)
 
 <p align="right"><a href="#readme-top">Jump to Top<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand gestures/Index Pointing Up.png" alt="Pointing Up" width="25" height="25" /></a></p>
 
 ## Built With 🔧
 
-<img src="https://img.shields.io/badge/JavaScript-f7df1d?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript"> <img src="https://img.shields.io/badge/CSS-006bc0?style=for-the-badge&logo=css3&logoColor=fff" alt="CSS"> <img src="https://img.shields.io/badge/HTML-dd4b25?style=for-the-badge&logo=html5&logoColor=fff" alt="HTML">
+<img src="https://img.shields.io/badge/React-087ea4?style=for-the-badge&logo=react&logoColor=fff" alt="Node.js"> <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=fff" alt="TypeScript"> <img src="https://img.shields.io/badge/SCSS-cd6799?style=for-the-badge&logo=sass&logoColor=fff" alt="SCSS"> <img src="https://img.shields.io/badge/Vite-9575cd?style=for-the-badge&logo=vite&logoColor=fff" alt="Node.js"> <img src="https://img.shields.io/badge/Node.js-3c873a?style=for-the-badge&logo=nodedotjs&logoColor=fff" alt="Node.js">
 
 <p align="right"><a href="#readme-top">Jump to Top<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand gestures/Index Pointing Up.png" alt="Pointing Up" width="25" height="25" /></a></p>
 
@@ -78,14 +78,14 @@ There's a live preview on this [website](https://senathenu.github.io/link-orchar
 Super Simple! 
 
 1. Create your own GitHub repository out of this template
-2. Open the `config.json` file
-3. Fill in your details
-4. Replace the images inside the assets folder with your custom ones
-5. Easily deploy the repo using GitHub Pages (Settings > Pages > Select the `main` Branch)
-   
-> \[!NOTE]
->
-> The order of the links and their displayed name are based on `config.json`'s `links` key. You can add any link there. The key you set up for each link (`Facebook` in `"Facebook": "https://facebook.com"`) is what you should use to name the link icon inside the `assets` folder!
+2. Configure the `config.json` file in `src/data`
+3. Configure the url:
+   * If your repo name is different from `link-orchard`, go to `vite.config.ts` and update `base: "/link-orchard/"` with your repo name.
+   * If you're planning to have a custom domain, remove that line.
+   * Finally go to `package.json` and update `    "homepage": "https://senathenu.github.io/link-orchard"` with your full url!
+4. Then, run `npm run build`. Afterwards, `npm run deploy`.
+5. Go to your GitHub repo's settings. In `Pages` set "Deploy from a branch" to `gh-pages`!
+6. Enjoy!
 
 > \[!IMPORTANT]
 >
@@ -111,21 +111,12 @@ _Let's show the power <img src="https://raw.githubusercontent.com/Tarikul-Islam-
     -   Introduce **_Awesome Features_**
     -   [Open Issues](https://github.com/SenaThenu/snake/issues)
     -   [Update Readme](https://github.com/SenaThenu/snake/blob/main/README.md)
-    -   [Make the Logo and the Assets Cooler](https://github.com/SenaThenu/snake/tree/main/slides) 
-
-- What to Contribute <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Thinking%20Face.png" alt="Thinking Face" width="25" height="25" />
-  - You can find some proposed features in the [Projects](https://github.com/SenaThenu/snake/projects) pane of this repository! (your proposals are welcome)
 
 <p align="right"><a href="#readme-top">Jump to Top<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand gestures/Index Pointing Up.png" alt="Pointing Up" width="25" height="25" /></a></p>
 
 ## Current Contributors 🧙‍♂️
 
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Star-Struck.png" alt="Star Face" width="25" height="25" />This wouldn't exist if it weren't for these developers! **_Our Gratitude!!!_** ([emoji key](https://allcontributors.org/docs/en/emoji-key)): <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="25" height="25" />
-
-> "Even when I lose, I'm winning \
-> 'Cause I give you all of me \
-> And you give me all of you" \
-> ~ All of Me - John Legend
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
